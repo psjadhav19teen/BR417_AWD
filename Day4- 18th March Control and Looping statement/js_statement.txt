@@ -1,0 +1,98 @@
+Control Statement
+
+1) Conditional
+1.1) if Statement
+
+if(condititon)
+{
+Statement
+}
+
+1.2) if-else Statement
+
+if(condititon)
+{
+True Statement
+}
+else
+{
+False Statement    
+}
+
+1.3) Nested if-else Statement
+
+if(condititon1)
+{
+ if(condititon2)
+ {Statement}
+ else
+ {Statement}
+}
+else
+{
+if(condititon3)
+ {Statement}
+ else
+ {Statement}   
+}
+
+1.4) Ladder if-else Statement
+
+if(condititon1)
+{
+Statement
+}
+else if (condititon2)
+{
+Statement
+}
+else if (condititon3)
+{
+Statement
+}
+--
+--
+else
+{
+Statement
+}
+
+1.5) Switch Case
+
+switch(variable)
+{
+    case 1 or 'A/a' or'admin':
+    Statement
+    break;
+    case 2:
+    --
+    break;
+    default:
+    break;
+}
+
+Looping Statement:
+1.1) while
+
+initialization
+while(condititon)
+{
+    Statement
+    increment/decrement
+}
+
+1.2) Do-while
+initialization
+do
+{
+    Statement
+    increment/decrement  
+}
+while(condititon)
+
+1.3) for Loop
+
+for(initialization;condititon;increment/decrement)
+{
+    Statement
+}

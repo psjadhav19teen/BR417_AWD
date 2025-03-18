@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+</head>
+<body>
+    <script>
+        //array writing type-1
+        /*
+        let empnames=["pooja","joel","rohit","raj"]
+        console.log(empnames,typeof(empnames));
+        let a=[]
+        console.log(a,typeof(a));
+        a.push("banana") //adds new elements at the end
+        console.log(a);
+        empnames.push("komal")
+        console.log(empnames)
+        a.unshift("mast melon") //adds new elements at the first
+        console.log(a);
+        empnames.unshift("jeet")
+        console.log(empnames)
+        let x=[]
+        console.log(x)
+        x[6]="red"
+        console.log(x) // adds elements at given index position
+        x[3]="white"
+        console.log(x)
+        console.log(empnames[2]); //index start from 0
+        console.log(empnames[-1]); // negative index won't work but ans is undefined
+        
+        //removing elements
+        empnames.pop()
+        console.log(empnames) // removes last elements
+        empnames.shift()
+        console.log(empnames) // removes first elements
+        delete empnames[2]
+        console.log(empnames) // removes first elements
+        */
+        
+        //array writing type-2 by using new keyword
+        let colors=new Array();
+        colors[0]="red"
+        colors.push("green")
+        colors.unshift("blue")
+        console.log(colors);
+        //Traversing array element type-1
+        for(let i=0;i<colors.length;i++)
+        {
+         console.log(colors[i]);
+        }
+        //Traversing array element type-2 via for in
+        for(let i in colors)
+        {
+            console.log(i,colors[i]);
+            
+        }
+        //Traversing array element type-3 via for of
+        for(let i of colors)
+        {
+            console.log(i);
+            
+        }
+        //Traversing array element type-4 via forEach
+        colors.forEach(i=>{
+            console.log(i);
+        })
+
+    </script>
+</body>
+</html>

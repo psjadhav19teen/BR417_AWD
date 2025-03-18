@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <script>
+        // WAP to check number is zero or not
+        // let n=parseInt(prompt("Enter n="))
+        // Ternary ?:
+        // n===0?console.log(n,"zero number"):console.log(n,"is not zero number")
+        /*
+        if (n===0)
+        {
+            console.log(n,"zero number")
+        }
+        else
+        {
+            console.log(n,"is not zero number")
+        }
+        */
+
+        // WAP to find greatest number among any number by using nested if-else
+        /*
+        let a=+prompt("enter a=")
+        let b=+prompt("enter b=")
+        let c=+prompt("enter c=")
+
+        if (a>b && a>c)
+        {
+        console.log(a,"is greatest");
+        }
+        else
+        {
+            if(b>c)
+            {
+                console.log(b,"is greatest");
+            }
+            else
+            {
+                console.log(c,"is greatest");
+            }
+        }
+        */
+
+
+        // WAP to show add,sub.mul,div as per choice number asked by user.
+
+        document.write("1:add<br>2:sub<br>3:mult<br>4:div<br>")
+        let choice=parseInt(prompt("enter choice number="))
+        let a=parseInt(prompt("enter a="))
+        let b=parseInt(prompt("enter b="))
+        /*
+        if (choice===1)
+        {
+            document.write("Addition=",(a+b))
+        }
+        else if(choice===2)
+        {
+            document.write("Subtraction=",(a-b))
+        }
+        else if(choice===3)
+        {
+            document.write("Multiplication=",(a*b))
+        }
+        else if(choice===4)
+        {
+            document.write("Division=",(a/b))
+        }
+        else
+        {
+            document.write("Invalid Choice number")
+        }
+        */
+
+
+        switch(choice)
+        {
+            case 1:
+                document.write("Addition=",(a+b))
+                break;
+            case 2:
+                document.write("Subtraction=",(a-b))
+                break;
+            case 3:
+                document.write("Multiplication=",(a*b))
+                break;
+            case 4:
+                document.write("Division=",(a/b))
+                break;
+            default:
+                document.write("Invalid Choice number")
+                break;
+        }
+
+
+    </script>
+</body>
+</html>
