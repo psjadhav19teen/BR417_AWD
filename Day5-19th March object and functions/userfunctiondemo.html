@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Demo</title>
+</head>
+<body>
+    <script>
+        //User Defined Functions types-1) Traditional 2) Anonymous 3) Arrow
+        //1) default 
+        //2) with parameter but without return type
+        //3) without parameter but with return type
+        //4) with param and with return type
+
+        /*
+        //1) default
+        function show(){
+            console.log("func1");
+        }
+        show()
+
+        //2) with parameter but without return type
+         function show(msg){
+            console.log("func1",msg);
+        }
+        show("parameter function")
+
+
+        //3) without parameter but with return type
+        function show(){
+            return "function without parameter but return type"
+        }
+        console.log(show())
+
+        //4) with param and with return type
+
+        function add(a,b){
+            return a+b;
+        }
+        console.log("addition=",add(67,100))
+        */
+
+        //Function Parameters
+
+        // function add(a,b=10)
+        // {
+        //     return a+b;
+        // }
+        // console.log(add(5)) //15
+
+        // function sub(a=10,b)
+        // {
+        //     return a-b;
+        // }
+        // console.log(sub(5)) //NaN (non-default argument cannot pass to default argument)
+
+        // function sub1(a=10,b=100)
+        // {
+        //     return a-b;
+        // }
+        // console.log(sub1(5)) //-95
+
+        // ...rest parameter
+
+        // function showcolors(...args){
+        //     return args;
+        // }
+        // console.log(showcolors("red","green","blue"))
+
+        //Argument as object
+        // x = sumAll(1, 123, 500, 115, 44, 88);
+
+        // function sumAll() 
+        // {
+        //     let sum = 0;
+        //     for (let i = 0; i < arguments.length; i++) {
+        //     sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(sumAll())
+
+
+        //Anonymous Function
+
+        let show=function()
+        {
+            console.log("anonymous function")
+        }
+        show()
+
+        //Arrow function
+        let display=()=>{
+            console.log("arrow function")
+        }
+        display()
+
+
+
+    </script>
+</body>
+</html>
