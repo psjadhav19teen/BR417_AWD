@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Demo</title>
+</head>
+<body>
+    <script>
+        class ATM
+        {
+            constructor(balance)
+            {
+                this.balance=balance
+            }
+
+            showdata()
+            {
+                var name=prompt("enter name=")
+                console.log("Customer Name=",name)
+            }
+            getbalance=()=>{
+                console.log("Customer Name=",name)
+                console.log("Customer Balance=",this.balance)
+            }
+        }
+        a=new ATM(1000);
+        a.showdata()
+        a.getbalance()
+
+    </script>
+</body>
+</html>

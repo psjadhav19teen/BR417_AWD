@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call by Value and Reference</title>
+  </head>
+  <body>
+    <script>
+      let callbyvalue = () => {
+        let a = 5;
+        let b = a; //primitive data type
+        console.log("a=", a, "b=", b); // a=5 b=5
+        a = 8;
+        console.log("updated a=", a, "updated b=", b); //a=8 b=5 (b's value can't change because a and b are primitive)
+      };
+      callbyvalue();
+
+      let callbyreference = () => {
+        let a = { fname: "raj", marks: 90 };
+        let b = a; //non-primitive data type
+        console.log("a-fname=", a.fname, "a-marks=", a.marks); // raj 90
+        console.log("b-fname=", b.fname, "b-marks=", b.marks); // raj 90
+
+        a.marks = 88;
+        console.log("updated a-fname=", a.fname, "a-marks=", a.marks); // raj 88
+        console.log("updated b-fname=", b.fname, "b-marks=", b.marks); // raj 88 (b's value changed because it is non-primitive)
+      };
+      callbyreference();
+    </script>
+  </body>
+</html>

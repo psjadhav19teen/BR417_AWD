@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Prototype</title>
+</head>
+<body>
+    <script>
+        function Person(fname,lname,age,salary)
+        {
+            this.fname=fname;
+            this.lname=lname;
+            this.age=age;
+            this.salary=salary;
+        }
+        let p1=new Person("Pooja","Shah",23,40000) //object constructor
+        console.log(p1)
+        console.log(p1.fname)
+        for(let x in p1)
+        {
+            console.log(p1[x]);
+            
+        }
+        Person.prototype.dob="21-02-2000";
+        for(let x in p1)
+        {
+            console.log(p1[x]);
+            
+        }
+    </script>
+</body>
+</html>
